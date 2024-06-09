@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Page</title>
+		<link rel="stylesheet" href="/css/loder.css" />
+		<link rel="icon" href="/images/2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/css/login.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<i>
+		<div class="container">
+		<div class="form-container log-in-container">
+			<form method="post" class="form" action="/login">
+				<h1><i class="fa fa-user-circle fa-3x" aria-hidden="true"> </i></h1>
+				<label for="text" class="label-name"> Username</label>
+				<input type="text" name="username" />
+				<label for="password" class="label-name">Password</label>
+				<input type="password" name="password" />
+				<a  id="forget" href="/forgotpassword">Forgot your password?</a
+					><br />
+					<button type="submit">Login</button>
+			    
+				
+			</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-right">
+						
+						<h1>Welcome</h1>
+						<p>Log in to track your travel expenses and get reimbursed faster. Our website is easy to use and secure, so you can focus on your trip, not your paperwork.</p>
+						<div class="member">
+							Don't have an account ? <a href="/signup"> Create a Account </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="inline">
+		<p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+	</div>
+	<script>
+		document.onreadystatechange = function () {
+			if (document.readyState !== "complete") {
+				document.querySelector("body").style.visibility = "hidden";
+				document.querySelector("#spinner").style.visibility = "visible";
+			} else {
+				document.querySelector("#spinner").style.display = "none";
+				document.querySelector("body").style.visibility = "visible";
+			}
+		};
+	</script>
+		<script src="/js/login.js"></script>
+	</body>
+</html>

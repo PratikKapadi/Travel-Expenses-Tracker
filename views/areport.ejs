@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/areport.css" />
+		<link rel="stylesheet" href="/css/admin.css" />
+		<link rel="icon" href="/images/2.png" type="image/x-icon" />
+		<title>Expense Report</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>Expense Report</h1>
+		</header>
+
+		<div class="sidebar">
+			<ul>
+				<li><a href="/admin" class="menu-link">Dashboard</a></li>
+				<li><a href="/generate-report" class="menu-link">Report</a></li>
+
+				<li><a href="/admin_logout" class="menu-link">Logout</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h1></h1>
+			<form method="get" action="/generate-report">
+				<label for="month">Select Month:</label>
+				<input type="number" id="month" name="month" required />
+
+				<label for="year">Select Year:</label>
+				<input type="number" id="year" name="year" required />
+
+				<button type="submit">Generate Report</button>
+			</form>
+			<table>
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Start Date</th>
+						<th>End Date</th>
+						<th>Trip Type</th>
+						<th>Place</th>
+						<th>Country</th>
+						<!-- Add more table headers as needed -->
+					</tr>
+				</thead>
+				<tbody>
+					<% if (trips && trips.length > 0) { %> <% trips.forEach((trip) => { %>
+					<tr>
+						<td><%=trip.username%></td>
+						<td><%= formatDate(trip.start_date)%></td>
+						<td><%= formatDate(trip.end_date)%></td>
+						<td><%=trip.trip_type%></td>
+						<td><%= trip.place %></td>
+						<td><%= trip.country %></td>
+						<!-- Add more table data cells as needed -->
+					</tr>
+					<% }); %> <% } else { %>
+					<tr>
+						<td colspan="3" class="no-data-trip">
+							No data found for the selected month and year.
+						</td>
+					</tr>
+					<% } %>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Website About Us Page</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		/>
+		<link rel="icon" href="/images/2.png" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="/css/loder.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="/css/footer.css" />
+		<link rel="stylesheet" href="/css/abouts.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href=""><img src="/images/2.png" /></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/dashboard"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/report">report</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Trip
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="/addtrip">Add Trip</a></li>
+								<li>
+									<a class="dropdown-item" href="/addexpenses">Add Expenses</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="btn-group">
+						<a
+							class="nav-link dropdown-toggle logout"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+						</a>
+
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/logout">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="about-us">
+			<div class="about">
+				<img src="/images/animate.jpg" class="pic" />
+				<div class="text">
+					<h2>About Us</h2>
+					<p>
+						Welcome to Travel Expenses Tracker, your go-to platform for managing
+						your travel expenses efficiently. At Travel Expenses Tracker, we
+						understand the importance of keeping track of your expenses while
+						you explore the world. Our mission is to simplify your travel
+						expense management process, allowing you to focus on what truly
+						matters – your journey.
+					</p>
+
+					<h3>What We Do</h3>
+					<p>
+						At Travel Expenses Tracker, we provide you with a user-friendly
+						interface to record and categorize your travel expenses. Whether
+						it's transportation, accommodation, food, activities, or any other
+						expenses related to your trips, our platform helps you organize
+						everything seamlessly. Our goal is to empower travelers like you to
+						make informed financial decisions during your travels.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-content">
+				<h3>Travel Expenses Tracker</h3>
+				<p>
+					And then there is the most dangerous risk of all – the risk of
+					spending your life not doing what you want on the bet you can buy
+					yourself the freedom to do it later. Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit.
+				</p>
+				<ul class="socials">
+					<li>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-youtube"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-menu">
+					<ul class="f-menu">
+						<li><a href="/dashboard">Home</a></li>
+						<li><a href="/aboutus">About</a></li>
+						<li><a href="/traveltips">Traveling Tips</a></li>
+						<li><a href="/contact">Contact</a></li>
+						<li><a href="/logout">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p>
+					copyright &copy;
+					<a href="#">Travel Expenses Tracker All Rights Reserves.</a>
+				</p>
+			</div>
+		</footer>
+		<div class="inline">
+			<p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+		</div>
+		<script>
+			document.onreadystatechange = function () {
+				if (document.readyState !== "complete") {
+					document.querySelector("body").style.visibility = "hidden";
+					document.querySelector("#spinner").style.visibility = "visible";
+				} else {
+					document.querySelector("#spinner").style.display = "none";
+					document.querySelector("body").style.visibility = "visible";
+				}
+			};
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

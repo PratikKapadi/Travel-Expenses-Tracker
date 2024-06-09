@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="/css/signup.css" />
+		<link rel="stylesheet" href="/css/loder.css" />
+		<link rel="icon" href="/images/2.png" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="form-container signup-container">
+				<form action="/signup" method="post">
+					<h2>Create your account</h2>
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" />
+
+					<label for="mobile">Mobile Number:</label>
+					<input type="tel" id="mobile" name="mobile" />
+
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" />
+					<label for="cpassword">Confirm Password:</label>
+					<input type="password" id="cpassword" name="cpassword" />
+
+					<button type="submit">Sign Up</button>
+				</form>
+				<div class="forget"></div>
+				Did you forget your password?
+				<a id="forget" href="/forgotpassword">Forget Password</a><br />
+
+				<div class="member">
+					already have an account? <a href="/login"> Login </a>
+				</div>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-right">
+						<h1>Welcome</h1>
+						<p>
+							Create a free account to track your travel expenses and get
+							reimbursed faster. Our website is easy to use and secure, so you
+							can focus on your trip, not your paperwork.
+						</p>
+						<div class="member">
+							already have an account? <a href="/login"> Login </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inline">
+			<p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+		</div>
+		<script>
+			document.onreadystatechange = function () {
+				if (document.readyState !== "complete") {
+					document.querySelector("body").style.visibility = "hidden";
+					document.querySelector("#spinner").style.visibility = "visible";
+				} else {
+					document.querySelector("#spinner").style.display = "none";
+					document.querySelector("body").style.visibility = "visible";
+				}
+			};
+		</script>
+	</body>
+</html>
