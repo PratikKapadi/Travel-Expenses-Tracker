@@ -1,0 +1,149 @@
+/* Additional styles specific to the landing page */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.welcome {
+    background-image: url("/images/11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 550px;
+    width: 1300px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+
+.welcome-text {
+    height: 550px;
+    width: 1300px;
+    opacity: 30%;
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    background-color: #cacdd2;
+}
+
+.welcome-text p {
+    color: #fff;
+}
+
+
+.container {
+    /* max-width: 800px; */
+    margin: 0;
+    padding: 20px;
+}
+
+
+.section-2 {
+    background-color: #f9f9f9;
+    /* Your desired background color */
+    padding: 50px 0;
+}
+
+.section-3 {
+    background-color: #f9f9f9;
+    /* Your desired background color */
+    padding: 50px 0;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.about-us-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+.about-us-image {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.section-3 {
+    background-color: #f9f9f9;
+    /* Your desired background color */
+    padding: 50px 0;
+}
+
+.travel-tips {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.travel-tips-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.travel-tips-image {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+
+
+
+
+.travel-tips img {
+    max-width: 100%;
+    height: auto;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
