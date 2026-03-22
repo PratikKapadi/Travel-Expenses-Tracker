@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.expense-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.label-name {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select option {
+    padding: 10px;
+}
+
+select:focus {
+    border: 1px solid #4CAF50;
+}
+
+
+button {
+    border-radius: 20px;
+    border: 1px solid #0ED2f7;
+    background-color: #0ED2F7;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:hover {
+    background-color: #5456a7;
+}
+
+@media (max-width: 600px) {
+    .expense-form {
+        width: 90%;
+    }
+}
+
+
+.main {
+
+    width: 50vw;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: white;
+}
+
+label {
+
+    font-size: 20px;
+}
+
+
+
+
+
+#finalAmount {
+
+    font-family: 'Lobster', cursive;
+
+    display: none;
+
+    margin: 50px auto;
+}
+
+
+#finalAmount h2 {
+
+    font-size: 50px;
+}
+
+.finalValue {
+
+    font-family: 'Amiri', serif;
+}
+
+
+@media (max-width: 768px) {
+
+    hr {
+
+        width: 60%;
+
+    }
+
+
+    .main {
+
+        width: 100%;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .heading {
+
+        font-size: 60px;
+
+    }
+
+
+    hr {
+
+        width: 75%;
+
+    }
+
+
+    #finalAmount h2,
+
+    .finalValue {
+
+        font-size: 40px;
+
+    }
+}

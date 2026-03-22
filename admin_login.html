@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Form</title>
+		<link rel="icon" href="/images/2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/css/admin_login.css" />
+	</head>
+	<body>
+		<div class="login-form">
+			<h2>Admin Login</h2>
+			<form action="/admin_login" method="post">
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="text" name="email" placeholder="Email" required /><br />
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input
+						type="password"
+						name="password"
+						placeholder="Password"
+						required
+					/><br />
+				</div>
+				<button type="submit">Login</button><br />
+				<a class="forget" id="forget" href="/reset-password">Forgot Password</a
+				><br />
+			</form>
+		</div>
+	</body>
+</html>

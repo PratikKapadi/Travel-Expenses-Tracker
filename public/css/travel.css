@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.Travel_Tips {
+  display: flex;
+  align-items: center;
+  padding: 90px 0;
+  background: #e7eff1;
+}
+
+.pic {
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  align-items: left;
+}
+
+.Travel {
+  width: 1500px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  width: 700px;
+}
+
+.text h2 {
+  color: #623d0a;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text h5 {
+  color: #0015ff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span {
+  color: #4070f4;
+}
+
+.text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+
+}
